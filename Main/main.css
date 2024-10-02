@@ -63,6 +63,7 @@ a{
     margin: 50px 350px 50px 350px;
 }
 
+
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -114,6 +115,12 @@ footer {
     margin: 0;
     background-color: #333;
     color: white;
+}
+
+@media only screen and (min-width: 431px) and (max-width: 932px) {
+    .slider {
+    margin: 50px 50px 50px 50pxpx;
+    }
 }
 
 
