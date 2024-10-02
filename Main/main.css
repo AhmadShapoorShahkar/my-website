@@ -1,3 +1,4 @@
+/* Default styles for all devices */
 body {
     font-family: Arial, sans-serif;
     justify-content: center;
@@ -7,7 +8,7 @@ body {
     background-color: #f0f0f0;
 }
 
-.navbar{
+.navbar {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -19,30 +20,31 @@ body {
     text-decoration: solid;
 }
 
-a{
+a {
     text-decoration: solid;
     color: white;
 }
 
-.navbar ul li{
+.navbar ul li {
     display: inline-block;
     border: 0px solid 0px;
     border-radius: 40px;
     background-color: rgb(95, 62, 171);
-    padding: 5px 15px 5px 15px;
+    padding: 5px 15px;
     margin-right: 20px;
     height: 20px;
     width: 50px;
     text-align: center;
     align-content: center;
 }
-.navbar ul li:hover{
+
+.navbar ul li:hover {
     display: inline-block;
     border-radius: 40px;
     color: black;
     background-color: aquamarine;
     font-weight: bold;
-    padding: 5px 15px 5px 15px;
+    padding: 5px 15px;
     margin-right: 20px;
     height: 20px;
     width: 50px;
@@ -50,7 +52,6 @@ a{
     align-content: center;
     cursor: pointer;
 }
-
 
 .slider {
     position: relative;
@@ -60,15 +61,14 @@ a{
     border: 2px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 50px 350px 50px 350px;
+    margin: 50px auto;
 }
-
 
 .slides {
     display: flex;
     transition: transform 0.5s ease-in-out;
     height: 550px;
-    width: 800px;
+    width: 100%;
 }
 
 .slide {
@@ -77,8 +77,8 @@ a{
 }
 
 .slide img {
-    width: 800px;
-    height: 550px;
+    width: 100%;
+    height: auto;
     display: block;
     border-radius: 10px;
 }
@@ -107,7 +107,6 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-
 footer {
     width: 100%;
     text-align: center;
@@ -117,14 +116,26 @@ footer {
     color: white;
 }
 
-@media only screen and (min-width: 431px) and (max-width: 932px) {
+/* Styles for iPhone 13 Pro Max in portrait mode */
+@media only screen and (max-width: 430px) {
     .slider {
-        margin: 0 0;
+        width: 100%;
+        margin: 20px 0;
     }
 
-    .navbar ul li{
-        margin-right: 5px 10px 5px 10px;
+    .navbar ul li {
+        margin-right: 10px;
     }
 }
 
+/* Styles for iPhone 13 Pro Max in landscape mode */
+@media only screen and (min-width: 431px) and (max-width: 932px) {
+    .slider {
+        width: 90%;
+        margin: 20px auto;
+    }
 
+    .navbar ul li {
+        margin-right: 10px;
+    }
+}
