@@ -61,7 +61,7 @@ a {
     border: 2px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 50px auto;
+    margin: 50px auto; /* Center the slider */
 }
 
 .slides {
@@ -120,7 +120,7 @@ footer {
 @media only screen and (max-width: 430px) {
     .slider {
         width: 100%;
-        margin: 20px 0;
+        margin: 20px auto; /* Center the slider */
     }
 
     .navbar ul li {
@@ -132,7 +132,7 @@ footer {
 @media only screen and (min-width: 431px) and (max-width: 932px) {
     .slider {
         width: 90%;
-        margin: 20px auto;
+        margin: 20px auto; /* Center the slider */
     }
 
     .navbar ul li {
